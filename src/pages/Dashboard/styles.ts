@@ -11,7 +11,7 @@ margin-top: 80px
 
  export const Image = styled.img `
  margin-top: 40px;
- `
+ `;
 
  export const Form = styled.form `
  margin-top:40px;
@@ -39,7 +39,7 @@ margin-top: 80px
     border: 0;
     border-radius: 0px 5px 5px 0px;
     color: #ffff;
-    transition: background-color 0.8s;
+    transition: background-color 0.2s;
 
     &:hover {
         background: ${shade(0.2,'#04D361')};
@@ -59,7 +59,7 @@ export const Repositories = styled.div `
 
         display: flex;
         align-items: center;
-        transition: transform 0.5s;
+        transition: transform 0.2s;
 
         &:hover {
         transform: translate(5px);
@@ -77,17 +77,20 @@ export const Repositories = styled.div `
         }
 
      div {
-            margin-left: 16px ;
-            strong{
-           font-size: 20px;
-           color: #3D3D4D;
+            margin: 0 16px ;
+            flex:1;
+            strong {
+                font-size: 20px;
+                color: #3D3D4D;
+
             }
 
+
             p {
-            font-size: 18px;
-            color: #A8A8B3;
-            margin-top: 4px;
-        }
+                font-size: 18px;
+                color: #A8A8B3;
+                margin-top: 4px;
+           }
 
     }
 
