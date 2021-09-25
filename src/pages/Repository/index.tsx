@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom'
 import { Header, RepositoryInfo, Issues } from './styles';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
+import api from '../../services/api'
 
 interface RepositoryParams {
     repository: string;
@@ -9,6 +10,22 @@ interface RepositoryParams {
 
 const Repository:React.FC = () => {
     const { params } = useRouteMatch<RepositoryParams>();
+
+    useEffect(() => {
+        const [repository, setRepository] = useState(null)
+        const
+
+        api.get(`repos/${params.repository}`).then(res => {
+            console.log(res.data)
+        });
+
+        api.get(`repos/${params.repository}`).then(res => {
+            console.log(res.data)
+        })
+    },   [params.repository])
+
+
+
 
 return (
     <>
