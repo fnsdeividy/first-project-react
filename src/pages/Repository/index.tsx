@@ -1,7 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useRouteMatch } from 'react-router-dom'
+import { Header } from './styles'
+
+interface RepositoryParams {
+    repository: string;
+}
 
 const Repository:React.FC = () => {
-return <h1>Repository</h1>;
+    const { params } = useRouteMatch<RepositoryParams>();
+
+return (
+    <Header>
+        <img src="https://xesque.rocketseat.dev/platform/1587379765556-attachment.svg" alt="Github Explorer" alt="" />
+    </Header>
+)
 };
 
 export default Repository;
