@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 
+
+export const Image = styled.img `
+ margin-top: 40px;
+ `;
+ 
 export const Header = styled.header `
 display: flex;
 align-items: center;
 justify-content: space-between;
+
+
 
 a {
     display: flex;
@@ -103,7 +110,8 @@ export const Issues = styled.div `
           margin-top:16px;
         }
 
-        
+
+
 
      div {
             margin: 0 16px ;
